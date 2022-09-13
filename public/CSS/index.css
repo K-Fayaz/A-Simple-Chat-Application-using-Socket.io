@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Roboto&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.container{
+  width: 100%;
+  height: 100vh;
+  /* background: red; */
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 12% 88%;
+}
+.user-info{
+  background: rgba(31,51,43,1);
+  grid-column: 1/5;
+  color: white;
+  /* box-shadow: -2px 6px 4px -6px rgba(0,0,0,0.75); */
+}
+
+.user-name{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 100%;
+  width: 340px;
+  max-width: 600px;
+  /* background: red; */
+}
+
+.friends{
+  /* background: lightgreen; */
+  /* display: flex; */
+  overflow-y: auto;
+  /* flex-direction: column; */
+  background: rgba(20,23,21,1);
+
+}
+
+.friend{
+  width: 100%;
+  height: 100px;
+  background: rgba(27,45,33,1);
+  /* background: red; */
+  margin-top: 4px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  /* color: white; */
+  justify-content: space-around;
+}
+
+.number-message{
+  margin-left: 0 15px;
+  /* padding: 5px 10px; */
+  background: rgba(45,62,50,1);
+  border-radius: 20px;
+  color: white;
+}
+
+.friend h3 a{
+  color: white;
+  text-decoration: none;
+}
+
+.message-container{
+  background: url("/image/BG-2.jpg");
+  grid-column: 2/5;
+  overflow-y: auto;
+}
+
+/*    ------
+  This css code is for the room that contains
+  all the codes and the input field to text
+      -------
+*/
+.room{
+  width: 100%;
+  height: 100%;
+  position: relative;
+  /* background: red; */
+}
+
+.friend-info{
+  width: 100%;
+  border-top: 1px solid black;
+  box-shadow: -2px 6px 10px -10px white;
+  display: flex;
+  color: white;
+  justify-content: space-between;
+  height: 65px;
+  align-items: center;
+}
+.friend-info h2{
+  margin-left: 25px;
+  color: white;
+}
+.friend-info svg{
+  margin-right: 25px;
+  width: 22px;
+  height: 22px;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 4px;
+  transition: 200ms;
+}
+.friend-info svg:hover{
+  background: rgba(167,165,167,0.3);
+}
+
+.private-messages{
+  width: 100%;
+  height: 80%;
+  /* background: red; */
+  overflow-y: auto;
+}
+
+.private-messages div{
+  width: 100%;
+}
+
+.private-messages div .message{
+  width: auto;
+  background: rgba(24,27,23,1);
+  color: white;
+  max-width: 300px;
+  border-top-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  padding: 10px 20px;
+  margin-top: 10px;
+  clear: both;
+}
+
+.me{
+  float: right;
+  margin-right: 5px;
+}
+/* pal class is for giving margin the friend's message */
+.pal{
+  margin-left: 5px;
+  float: left;
+}
+
+.form{
+  position: absolute;
+  width: 100%;
+  top: 92%;
+  height: 40px;
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.form input{
+  height: 85%;
+  width: 80%;
+  transition: 200ms;
+  background: transparent;
+  appearance: none;
+  border: 1px solid white;
+  color: white;
+}
+
+.form input::placeholder{
+  color: white;
+}
+
+.form input:focus{
+  padding-left: 10px;
+  outline: none;
+}
+
+.form button{
+  background: transparent;
+  border: none;
+}
+.form button svg{
+  width: 32px;
+  height: 32px;
+  fill: green;
+  cursor: pointer;
+}
